@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER desmfr
+MAINTAINER fdesmier
 
 ENV DEBIAN_FRONTEND noninteractive
 
