@@ -1,12 +1,10 @@
 # eth_node
 Dockerfile d'un noeud ethereum - fdesmier
 
-##Télécharger le dockerfile et cop
-cp Dockerfile /your/folder
-cd /your/folder
+##Télécharger le dockerfile
 
 ##créer l'image
-docker build -t eth_node_img .
+docker build -t eth_node_img /your/folder/Dockerfile
 
 ##créer le container en tache de fond
 docker run -d -p 30303:30303 -v /your/blockchain/path:/root --name eth_node_ctn eth_node_img
