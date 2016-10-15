@@ -9,7 +9,7 @@ docker build -t eth_node_img /your/folder/Dockerfile
 ##créer le container en tache de fond
 docker run -d -p 30303:30303 -v /your/blockchain/path:/root --name eth_node_ctn eth_node_img
 
-##démarrer le container, qui se sera suerment arreté tout seul
+##démarrer le container, qui se sera surement arreté tout seul
 docker start eth_node_ctn
 
 ##ouvre une console sur le container
